@@ -1,0 +1,13 @@
+.citations
+.citediff
+.compiled
+.figs
+.undefcit
+.undefref
+.valid
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.log
+*.pdf
