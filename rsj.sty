@@ -19,7 +19,7 @@
 %	14/08/95 OSHIRO Naoki
 % 
 %
-\typeout{*** Document Style 'RSJ 2015 for pLaTeX2e' (2015/05/10) ***}
+\typeout{*** Document Style 'RSJ 2016 for pLaTeX2e' (2016/04/25) ***}
 
 \twocolumn
 \sloppy
@@ -268,3 +268,11 @@
 \def\textfraction{.05}
 \def\floatpagefraction{.5}
 
+\def\acknowledgements{\par
+  {\bfseries 謝\hskip1zw 辞}\hskip1zw
+\ignorespaces}
+\def\endacknowledgements{\par}
+
+\newcommand{\figref}[1]{図\ref{figure:#1}}
+\newcommand{\tabref}[1]{表\ref{table:#1}}
+\newcommand{\secref}[1]{第\ref{section:#1}節}
