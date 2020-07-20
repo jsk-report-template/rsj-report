@@ -1,4 +1,5 @@
 # rsj-template
+[![Build Status](https://travis-ci.com/jsk-report-template/rsj-report.svg?branch=master)](https://travis-ci.com/github/jsk-report-template/rsj-report)
 
 Latex template for RSJ
 
