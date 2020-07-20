@@ -1,6 +1,6 @@
 # rsj-template
 
-Latex template forrsj 
+Latex template for RSJ
 
 ### 1. Prerequisities
 
@@ -14,11 +14,21 @@ sudo apt-get install latexmk
 ### 3. Make pdf
 
 ```bash
+make
+# or
 latexmk -pvc main
 ```
 
-### 4. Make publication PDF
+### 4. Make publication pdf 
 
 ```bash
 make pub
+```
+
+### Optional. cleaning
+
+```bash
+make clean
+# or
+make wipe
 ```
