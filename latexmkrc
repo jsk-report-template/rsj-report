@@ -14,6 +14,6 @@ $makeindex = 'mendex %O -o %D %S';
 if ($^O eq 'darwin') {
     $pdf_previewer = 'open -a Preview.app %S';
 } elsif ($^O eq 'linux') {
-    $pdf_previewer = 'mupdf';
+    $pdf_previewer = 'evince';
 }
 $preview_continuous_mode = 1;
