@@ -1,0 +1,27 @@
+language:
+- generic
+compiler:
+- gcc
+matrix:
+  include:
+  - os: linux
+    dist: trusty
+    sudo: required
+  - os: linux
+    dist: xenial
+    sudo: required
+  - os: linux
+    dist: bionic
+    sudo: required
+  - os: osx
+  allow_failures:
+  - os: osx
+  fast_finish: true
+before_script:
+- if [ $TRAVIS_OS_NAME == "osx" ]; then brew update -y; else sudo apt-get update -y
+  -qq; fi
+- if [ $TRAVIS_OS_NAME != "osx" ]; then sudo apt-get install -y -qq build-essential;
+  fi
+script:
+- make
+- make pub
