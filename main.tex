@@ -4,20 +4,20 @@
 \graphicspath{{figs/}}
 \usepackage{url}
 
-\title{1192年度 研究要旨: \\
-プログレスレポートのテンプレート}
-\author{1192年 源頼朝}
-
 \begin{document}
 
-\pagestyle{empty}
+\title{RSJレポートのテンプレート}
+\author{◯源 頼朝 (東京大学)}
+
+% 行間の設定
+\setlength{\baselineskip}{4.4mm}
 \maketitle
 \thispagestyle{empty}
-\sloppy
+\pagestyle{empty}
 
 \section{はじめに}
 
-本稿はプログレスレポートのテンプレートである\cite{Sakai}．
+本稿はRSJレポートのテンプレートである~\cite{Sakai}．
 
 本稿における「、」や「。」は、\verb|make pub|を実行することで、「，」や「．」に変更される。
 
@@ -51,8 +51,10 @@
 
 \section{おわりに}
 
+\small
 \bibliographystyle{junsrt}
 \bibliography{main}
+\normalsize
 
 \end{document}
 
