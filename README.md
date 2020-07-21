@@ -16,9 +16,9 @@ latexmk -pvc main
 ### Optional. Convert Japanese punctuations
 
 ```bash
-$ make pub
+make pub
 # or
-$ make publish
+make publish
 # will convert 「、」「。」 to 「，」「．」 in *.tex
 # Original files are backed up as *.tex.orig
 ```
